@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <main class="bg-img">
+      <div class="main-container">
+        <div class="form-container">
+          <h1 style="text-align: center; margin-bottom: 20px">Sign in</h1>
+          <div class="email-field">
+            <label for="">Email or username</label><br />
+            <input class="input" type="email" placeholder="Email or username" />
+          </div>
+          <div class="password-field">
+            <label for="">Password</label><br />
+            <input id="input" type="password" placeholder="Password" />
+          </div>
+          <div class="btn-link">
+            <button>Sign in</button>
+            <a href="#">Need help signing in?</a>
+          </div>
+          <hr style="margin: 20px 0" />
+          <div class="bottom-link">
+            <h2 style="font-size: 20px; white-space: nowrap">
+              Dont have a BBC account?
+            </h2>
+            <a href="">Register now</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const input = document.querySelector(".input");
+      input.addEventListener("focus", () => {
+        input.placeholder = "";
+      });
+      input.addEventListener("blur", () => {
+        input.placeholder = "Email or Username";
+      });
+
+      const input1 = document.querySelector("#input");
+      input1.addEventListener("focus", () => {
+        input1.placeholder = "";
+      });
+      input.addEventListener("blur", () => {
+        input1.placeholder = "Password";
+      });
+    </script>
+  </body>
+</html>
